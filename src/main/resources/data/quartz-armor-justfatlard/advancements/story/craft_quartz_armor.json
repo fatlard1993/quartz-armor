@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:nether/root",
+  "display": {
+    "icon": { "item": "quartz-armor-justfatlard:quartz_chestplate" },
+    "title": {
+      "translate": "advancements.story.quartz-armor-justfatlard.craft_quartz_armor.title"
+    },
+    "description": {
+      "translate": "advancements.story.quartz-armor-justfatlard.craft_quartz_armor.description"
+    }
+  },
+  "criteria": {
+    "has_emerald_armor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "tag": "quartz-armor-justfatlard:quartz_armor" }] }
+    }
+  }
+}

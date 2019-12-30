@@ -2,5 +2,7 @@
   "item.quartz-armor-justfatlard.quartz_helmet": "Quartz Helmet",
   "item.quartz-armor-justfatlard.quartz_chestplate": "Quartz Chestplate",
   "item.quartz-armor-justfatlard.quartz_leggings": "Quartz Leggings",
-  "item.quartz-armor-justfatlard.quartz_boots": "Quartz Boots"
+  "item.quartz-armor-justfatlard.quartz_boots": "Quartz Boots",
+  "advancements.story.quartz-armor-justfatlard.craft_quartz_armor.title": "The Bright Knight",
+  "advancements.story.quartz-armor-justfatlard.craft_quartz_armor.description": "Craft some quartz armor"
 }

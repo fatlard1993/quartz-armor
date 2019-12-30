@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "has_emerald": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "item": "minecraft:smooth_quartz" }] }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "quartz-armor-justfatlard:quartz_helmet",
+      "quartz-armor-justfatlard:quartz_chestplate",
+      "quartz-armor-justfatlard:quartz_leggings",
+      "quartz-armor-justfatlard:quartz_boots"
+    ]
+  }
+}
