@@ -10,7 +10,7 @@
     }
   },
   "criteria": {
-    "has_emerald_armor": {
+    "has_quartz_armor": {
       "trigger": "minecraft:inventory_changed",
       "conditions": { "items": [{ "tag": "quartz-armor-justfatlard:quartz_armor" }] }
     }

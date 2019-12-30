@@ -1,6 +1,6 @@
 {
   "criteria": {
-    "has_emerald": {
+    "has_quartz": {
       "trigger": "minecraft:inventory_changed",
       "conditions": { "items": [{ "item": "minecraft:smooth_quartz" }] }
     }
