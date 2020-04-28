@@ -1,6 +1,4 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "quartz-armor-justfatlard:item/quartz_leggings"
-  }
+	"parent": "item/generated",
+	"textures": { "layer0": "quartz-armor-justfatlard:item/quartz_leggings" }
 }

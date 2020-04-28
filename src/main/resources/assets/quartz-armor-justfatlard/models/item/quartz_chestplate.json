@@ -1,6 +1,4 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "quartz-armor-justfatlard:item/quartz_chestplate"
-  }
+	"parent": "item/generated",
+	"textures": { "layer0": "quartz-armor-justfatlard:item/quartz_chestplate" }
 }

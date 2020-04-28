@@ -2,10 +2,18 @@ package justfatlard.quartz_armor;
 
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.ArmorItem;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class QuartzArmor implements ModInitializer {
+class QuartzArmorItem extends ArmorItem {
+	public QuartzArmorItem(EquipmentSlot slot) {
+		super(Main.QUARTZ_ARMOR_MATERIAL, slot, new Settings().maxCount(1).group(ItemGroup.COMBAT));
+	}
+}
+
+public class Main implements ModInitializer {
 	private final static String MOD_ID = "quartz-armor-justfatlard";
 
 	public final static QuartzArmorMaterial QUARTZ_ARMOR_MATERIAL = new QuartzArmorMaterial();
