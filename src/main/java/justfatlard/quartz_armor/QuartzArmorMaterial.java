@@ -8,14 +8,10 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 
 public class QuartzArmorMaterial implements ArmorMaterial {
-	private final static int[] BASE_DURABILITY = new int[]{6, 7, 8, 5};
-	private final static int[] PROTECTION_AMOUNTS = new int[]{3, 6, 8, 3};
-	private final int durabilityMultiplier = 18;
+	private final static int[] protection = new int[]{4, 7, 9, 4};
 
 	@Override
-	public int getDurability(EquipmentSlot slot){
-		return BASE_DURABILITY[slot.getEntitySlotId()] * durabilityMultiplier;
-	}
+	public int getDurability(EquipmentSlot slot){ return 128; }
 
 	@Override
 	public Ingredient getRepairIngredient(){
@@ -23,27 +19,17 @@ public class QuartzArmorMaterial implements ArmorMaterial {
 	}
 
 	@Override
-	public int getEnchantability(){
-		return 30;
-	}
+	public int getEnchantability(){ return 30; }
 
 	@Override
-	public int getProtectionAmount(EquipmentSlot slot){
-		return PROTECTION_AMOUNTS[slot.getEntitySlotId()];
-	}
+	public int getProtectionAmount(EquipmentSlot slot){ return protection[slot.getEntitySlotId()]; }
 
 	@Override
-	public String getName(){
-		return "quartz";
-	}
+	public String getName(){ return "quartz"; }
 
 	@Override
-	public SoundEvent getEquipSound(){
-		return SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND;
-	}
+	public SoundEvent getEquipSound(){ return SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND; }
 
 	@Override
-	public float getToughness(){
-		return 3;
-	}
+	public float getToughness(){ return 3; }
 }
