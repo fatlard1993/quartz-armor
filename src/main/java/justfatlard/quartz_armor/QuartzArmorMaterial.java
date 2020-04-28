@@ -9,7 +9,7 @@ import net.minecraft.sound.SoundEvents;
 
 public class QuartzArmorMaterial implements ArmorMaterial {
 	private final static int[] BASE_DURABILITY = new int[]{6, 7, 8, 5};
-	private final static int[] PROTECTION_AMOUNTS = new int[]{3, 6, 8, 2};
+	private final static int[] PROTECTION_AMOUNTS = new int[]{3, 6, 8, 3};
 	private final int durabilityMultiplier = 16;
 
 	@Override
@@ -44,6 +44,6 @@ public class QuartzArmorMaterial implements ArmorMaterial {
 
 	@Override
 	public float getToughness(){
-		return 1;
+		return 3;
 	}
 }
