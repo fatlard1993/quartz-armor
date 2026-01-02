@@ -1,0 +1,23 @@
+{
+  "parent": "minecraft:nether/root",
+  "display": {
+    "icon": { "id": "minecraft:smooth_quartz" },
+    "title": { "text": "Crystal Clear Protection" },
+    "description": { "text": "Obtain smooth quartz to craft quartz armor" },
+    "hidden": true
+  },
+  "criteria": {
+    "has_smooth_quartz": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": "minecraft:smooth_quartz" }] }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "quartz-armor-justfatlard:quartz_helmet",
+      "quartz-armor-justfatlard:quartz_chestplate",
+      "quartz-armor-justfatlard:quartz_leggings",
+      "quartz-armor-justfatlard:quartz_boots"
+    ]
+  }
+}

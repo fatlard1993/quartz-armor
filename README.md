@@ -3,6 +3,9 @@
 [![CurseForge](http://cf.way2muchnoise.eu/full_simple-quartz-armor_downloads.svg)](http://www.curseforge.com/minecraft/mc-mods/simple-quartz-armor)
 [![CurseForge](http://cf.way2muchnoise.eu/versions/simple-quartz-armor.svg)](http://www.curseforge.com/minecraft/mc-mods/simple-quartz-armor)
 
+![Quartz Armor](img.png)
+![Quartz Armor on Player](img2.png)
+
 A [Minecraft](minecraft.net) mod built on [Fabric](fabricmc.net).
 
 This mod adds quartz armor, made from smooth quartz blocks.
