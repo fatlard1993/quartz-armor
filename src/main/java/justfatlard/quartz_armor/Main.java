@@ -16,16 +16,21 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.item.ItemGroups;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Main implements ModInitializer {
 	public static final String MOD_ID = "quartz-armor-justfatlard";
+	private static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	// Quartz armor stats - high protection, low durability, high enchantability
 	public static final int BASE_DURABILITY = 10; // Very low (iron is 15, diamond is 33)
+	public static final int ENCHANTABILITY = 30; // Very high (diamond is 10, gold is 22)
 
 	// Defense values (higher than diamond!)
 	public static final int HELMET_DEFENSE = 4;
@@ -35,6 +40,11 @@ public class Main implements ModInitializer {
 
 	// Armor toughness (higher than diamond's 2)
 	public static final double ARMOR_TOUGHNESS = 3.0;
+
+	// Repair items tag
+	public static final TagKey<Item> REPAIR_ITEMS = TagKey.of(
+		RegistryKeys.ITEM, Identifier.of(MOD_ID, "quartz_armor_repair_items")
+	);
 
 	private static RegistryKey<Item> keyOf(String name) {
 		return RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, name));
@@ -66,45 +76,49 @@ public class Main implements ModInitializer {
 	// Armor items - using leather armor as Polymer item to enable custom color rendering on player model
 	public static final Item QUARTZ_HELMET = new QuartzArmorItem(
 		EquipmentType.HELMET,
-		HELMET_DEFENSE,
 		new Item.Settings()
 			.registryKey(keyOf("quartz_helmet"))
 			.maxCount(1)
 			.maxDamage(EquipmentType.HELMET.getMaxDamage(BASE_DURABILITY))
-			.attributeModifiers(createArmorAttributes(HELMET_DEFENSE, ARMOR_TOUGHNESS, AttributeModifierSlot.HEAD)),
+			.attributeModifiers(createArmorAttributes(HELMET_DEFENSE, ARMOR_TOUGHNESS, AttributeModifierSlot.HEAD))
+			.enchantable(ENCHANTABILITY)
+			.repairable(REPAIR_ITEMS),
 		Items.LEATHER_HELMET
 	);
 
 	public static final Item QUARTZ_CHESTPLATE = new QuartzArmorItem(
 		EquipmentType.CHESTPLATE,
-		CHESTPLATE_DEFENSE,
 		new Item.Settings()
 			.registryKey(keyOf("quartz_chestplate"))
 			.maxCount(1)
 			.maxDamage(EquipmentType.CHESTPLATE.getMaxDamage(BASE_DURABILITY))
-			.attributeModifiers(createArmorAttributes(CHESTPLATE_DEFENSE, ARMOR_TOUGHNESS, AttributeModifierSlot.CHEST)),
+			.attributeModifiers(createArmorAttributes(CHESTPLATE_DEFENSE, ARMOR_TOUGHNESS, AttributeModifierSlot.CHEST))
+			.enchantable(ENCHANTABILITY)
+			.repairable(REPAIR_ITEMS),
 		Items.LEATHER_CHESTPLATE
 	);
 
 	public static final Item QUARTZ_LEGGINGS = new QuartzArmorItem(
 		EquipmentType.LEGGINGS,
-		LEGGINGS_DEFENSE,
 		new Item.Settings()
 			.registryKey(keyOf("quartz_leggings"))
 			.maxCount(1)
 			.maxDamage(EquipmentType.LEGGINGS.getMaxDamage(BASE_DURABILITY))
-			.attributeModifiers(createArmorAttributes(LEGGINGS_DEFENSE, ARMOR_TOUGHNESS, AttributeModifierSlot.LEGS)),
+			.attributeModifiers(createArmorAttributes(LEGGINGS_DEFENSE, ARMOR_TOUGHNESS, AttributeModifierSlot.LEGS))
+			.enchantable(ENCHANTABILITY)
+			.repairable(REPAIR_ITEMS),
 		Items.LEATHER_LEGGINGS
 	);
 
 	public static final Item QUARTZ_BOOTS = new QuartzArmorItem(
 		EquipmentType.BOOTS,
-		BOOTS_DEFENSE,
 		new Item.Settings()
 			.registryKey(keyOf("quartz_boots"))
 			.maxCount(1)
 			.maxDamage(EquipmentType.BOOTS.getMaxDamage(BASE_DURABILITY))
-			.attributeModifiers(createArmorAttributes(BOOTS_DEFENSE, ARMOR_TOUGHNESS, AttributeModifierSlot.FEET)),
+			.attributeModifiers(createArmorAttributes(BOOTS_DEFENSE, ARMOR_TOUGHNESS, AttributeModifierSlot.FEET))
+			.enchantable(ENCHANTABILITY)
+			.repairable(REPAIR_ITEMS),
 		Items.LEATHER_BOOTS
 	);
 
@@ -138,6 +152,6 @@ public class Main implements ModInitializer {
 			entries.add(QUARTZ_BOOTS);
 		});
 
-		System.out.println("[quartz-armor] Loaded quartz-armor (server-side with Polymer)");
+		LOGGER.info("Loaded quartz-armor (server-side with Polymer)");
 	}
 }

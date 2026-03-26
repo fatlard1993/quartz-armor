@@ -2,8 +2,8 @@
   "parent": "minecraft:nether/root",
   "display": {
     "icon": { "id": "minecraft:smooth_quartz" },
-    "title": { "text": "Crystal Clear Protection" },
-    "description": { "text": "Obtain smooth quartz to craft quartz armor" },
+    "title": { "translate": "advancements.story.quartz-armor-justfatlard.craft_quartz_armor.title" },
+    "description": { "translate": "advancements.story.quartz-armor-justfatlard.craft_quartz_armor.description" },
     "hidden": true
   },
   "criteria": {

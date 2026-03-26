@@ -25,7 +25,7 @@ public class QuartzArmorItem extends Item implements PolymerItem {
 		Identifier.of("minecraft", "quartz")
 	);
 
-	public QuartzArmorItem(EquipmentType type, int defense, Item.Settings settings, Item polymerItem) {
+	public QuartzArmorItem(EquipmentType type, Item.Settings settings, Item polymerItem) {
 		super(settings.equippable(type.getEquipmentSlot()));
 		this.polymerItem = polymerItem;
 		this.slot = type.getEquipmentSlot();
