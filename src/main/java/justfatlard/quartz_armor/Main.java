@@ -24,7 +24,6 @@ public class Main implements ModInitializer {
 	public static final String MOD_ID = "quartz-armor-justfatlard";
 	private static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-	// Repair items tag
 	public static final TagKey<Item> REPAIR_ITEMS = TagKey.create(
 		Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, "quartz_armor_repair_items")
 	);
@@ -50,12 +49,10 @@ public class Main implements ModInitializer {
 		return ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, name));
 	}
 
-	// Creative tab key for combat
 	private static final ResourceKey<CreativeModeTab> COMBAT_TAB = ResourceKey.create(
 		Registries.CREATIVE_MODE_TAB, Identifier.fromNamespaceAndPath("minecraft", "combat")
 	);
 
-	// Armor items
 	public static final Item QUARTZ_HELMET = new QuartzArmorItem(
 		new Item.Properties()
 			.setId(keyOf("quartz_helmet"))
@@ -82,7 +79,6 @@ public class Main implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		// Register with Pandorical if available
 		if (PandoricalApi.isAvailable()) {
 			PandoricalApi.content().registerModAssets(MOD_ID);
 		}
@@ -92,7 +88,6 @@ public class Main implements ModInitializer {
 		Registry.register(BuiltInRegistries.ITEM, keyOf("quartz_leggings"), QUARTZ_LEGGINGS);
 		Registry.register(BuiltInRegistries.ITEM, keyOf("quartz_boots"), QUARTZ_BOOTS);
 
-		// Add armor to vanilla Combat creative tab
 		CreativeModeTabEvents.modifyOutputEvent(COMBAT_TAB).register(entries -> {
 			entries.accept(QUARTZ_HELMET);
 			entries.accept(QUARTZ_CHESTPLATE);
