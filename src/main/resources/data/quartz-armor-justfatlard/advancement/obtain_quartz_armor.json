@@ -1,15 +1,23 @@
 {
   "parent": "minecraft:nether/root",
   "display": {
-    "icon": { "id": "minecraft:smooth_quartz" },
-    "title": { "translate": "advancements.story.quartz-armor-justfatlard.craft_quartz_armor.title" },
-    "description": { "translate": "advancements.story.quartz-armor-justfatlard.craft_quartz_armor.description" },
+    "icon": {
+      "id": "minecraft:smooth_quartz"
+    },
+    "title": "The Bright Knight",
+    "description": "Craft some quartz armor",
     "hidden": true
   },
   "criteria": {
     "has_smooth_quartz": {
       "trigger": "minecraft:inventory_changed",
-      "conditions": { "items": [{ "items": "minecraft:smooth_quartz" }] }
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:smooth_quartz"
+          }
+        ]
+      }
     }
   },
   "rewards": {
