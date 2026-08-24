@@ -43,7 +43,11 @@ public class Main implements ModInitializer {
 		3.0f,                                  // toughness (higher than diamond's 2)
 		0.0f,                                  // knockback resistance
 		REPAIR_ITEMS,                          // repair ingredient
-		EquipmentAssets.DIAMOND                // asset (visual fallback)
+		// This mod's own equipment definition, which it has always shipped at
+		// assets/minecraft/equipment/quartz.json and never pointed at: the material named
+		// diamond's instead, so the armour on a wearer was diamond-coloured whatever the
+		// item in the slot looked like.
+		ResourceKey.create(EquipmentAssets.ROOT_ID, Identifier.withDefaultNamespace("quartz"))
 	);
 
 	private static ResourceKey<Item> keyOf(String name) {
