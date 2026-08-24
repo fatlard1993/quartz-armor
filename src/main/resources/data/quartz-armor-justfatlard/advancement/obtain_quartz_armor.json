@@ -9,23 +9,53 @@
     "hidden": true
   },
   "criteria": {
-    "has_smooth_quartz": {
+    "has_quartz_helmet": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "items": "minecraft:smooth_quartz"
+            "items": "quartz-armor-justfatlard:quartz_helmet"
+          }
+        ]
+      }
+    },
+    "has_quartz_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "quartz-armor-justfatlard:quartz_chestplate"
+          }
+        ]
+      }
+    },
+    "has_quartz_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "quartz-armor-justfatlard:quartz_leggings"
+          }
+        ]
+      }
+    },
+    "has_quartz_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "quartz-armor-justfatlard:quartz_boots"
           }
         ]
       }
     }
   },
-  "rewards": {
-    "recipes": [
-      "quartz-armor-justfatlard:quartz_helmet",
-      "quartz-armor-justfatlard:quartz_chestplate",
-      "quartz-armor-justfatlard:quartz_leggings",
-      "quartz-armor-justfatlard:quartz_boots"
+  "requirements": [
+    [
+      "has_quartz_helmet",
+      "has_quartz_chestplate",
+      "has_quartz_leggings",
+      "has_quartz_boots"
     ]
-  }
+  ]
 }
