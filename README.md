@@ -27,13 +27,13 @@ A Fabric mod that adds a full set of armor crafted from smooth quartz blocks. It
 
 ## Pandorical
 
-Quartz Armor runs server-side, and Pandorical is a hard dependency (`fabric.mod.json`): the server will not load this mod without it. It syncs the armor's textures and models through `PandoricalApi.content().registerModAssets()`.
+Quartz Armor runs server-side, and Pandorical is required: the server will not load this mod without it. It syncs the armor's textures and models through Pandorical's content sync.
 
 Clients are the optional half. A player on a Pandorical client sees quartz armor; a player on a vanilla client sees diamond armor, because the vanilla-facing equipment asset maps to diamond as a fallback. The stats are identical either way.
 
-## Installation
+## Development
 
-Install server-side alongside its declared dependencies (see `fabric.mod.json`); connecting clients need only Pandorical. Version targets live in `gradle.properties` (Minecraft, loader, Fabric API) and `fabric.mod.json` (Java).
+Installing is in [DEVELOPMENT.md](DEVELOPMENT.md).
 
 ## License
 
