@@ -2,6 +2,11 @@
 
 A Fabric mod that adds a full set of armor crafted from smooth quartz blocks. It's a glass-cannon armor tier: the highest protection and toughness in the game, but with durability so low it breaks quickly, trading longevity for raw defense.
 
+## Screenshots
+
+![The full set worn on an armour stand](img.png)
+![Helmet, chestplate, leggings and boots](img2.png)
+
 ## Features
 
 - Helmet, chestplate, leggings, and boots crafted from smooth quartz blocks using standard vanilla armor crafting patterns
