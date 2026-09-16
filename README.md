@@ -10,6 +10,7 @@ A Fabric mod that adds a full set of armor crafted from smooth quartz blocks. It
 - Triple the enchantability of diamond, making these pieces easy to enchant well
 - Very low base durability: the tradeoff for the stat boost
 - Repairable with smooth quartz blocks
+- Accepts armor trims
 - Added to the vanilla Combat creative tab
 
 ### Armor Stats
@@ -29,7 +30,7 @@ A Fabric mod that adds a full set of armor crafted from smooth quartz blocks. It
 
 Quartz Armor runs server-side, and Pandorical is required: the server will not load this mod without it. It syncs the armor's textures and models through Pandorical's content sync.
 
-Clients are the optional half. A player on a Pandorical client sees quartz armor; a player on a vanilla client sees diamond armor, because the vanilla-facing equipment asset maps to diamond as a fallback. The stats are identical either way.
+Clients are the optional half. A player on a Pandorical client sees quartz armor. The worn armor's look is the mod's own `quartz` equipment asset, which reaches clients only through the content sync, so a vanilla client does not have it and cannot draw the worn armor as quartz (it is not mapped to diamond's). The stats are identical either way.
 
 ## Development
 
