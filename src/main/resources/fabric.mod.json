@@ -1,22 +1,30 @@
 {
-  "schemaVersion": 1,
-  "id": "quartz-armor-justfatlard",
-  "version": "${version}",
-  "name": "Quartz Armor",
-  "description": "Adds armor made out of smooth quartz",
-  "authors": ["justfatlard"],
-  "contact": {},
-  "license": "MIT",
-  "icon": "assets/quartz-armor-justfatlard/icon.png",
-  "environment": "*",
-  "entrypoints": {
-    "main": ["justfatlard.quartz_armor.Main"]
-  },
-  "depends": {
-    "fabricloader": ">=${loaderVersion}",
-    "fabric-api": "${fabricApiVersion}",
-    "minecraft": "${minecraftDependency}",
-    "java": ">=25",
-    "pandorical": ">=15.0.0"
-  }
+	"schemaVersion": 1,
+	"id": "quartz-armor-justfatlard",
+	"version": "${version}",
+	"name": "Quartz Armor",
+	"description": "Adds armor made out of smooth quartz",
+	"authors": [
+		"justfatlard"
+	],
+	"contact": {
+		"homepage": "https://github.com/fatlard1993/quartz-armor",
+		"sources": "https://github.com/fatlard1993/quartz-armor",
+		"issues": "https://github.com/fatlard1993/quartz-armor/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/quartz-armor-justfatlard/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"justfatlard.quartz_armor.Main"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=${loaderVersion}",
+		"fabric-api": "${fabricApiVersion}",
+		"minecraft": "${minecraftDependency}",
+		"java": ">=25",
+		"pandorical": ">=15.0.0"
+	}
 }
