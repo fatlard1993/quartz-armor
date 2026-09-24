@@ -4,10 +4,12 @@
   ],
   "versions": {
     "2.0.1": [
-      "Worn quartz armour uses the mod's own texture rather than falling back to diamond's, and the mod menu icon is found where it should be."
+      "Worn quartz armour uses the mod's own texture rather than falling back to diamond's.",
+      "The mod menu icon is found where it should be."
     ],
     "2.0.0": [
-      "Helmet, chestplate, leggings and boots, with vanilla crafting patterns, triple diamond's enchantability, armour trims, and an advancement for each recipe."
+      "Helmet, chestplate, leggings and boots, with vanilla crafting patterns.",
+      "Triple diamond's enchantability, armour trims, and an advancement for each recipe."
     ]
   }
 }
