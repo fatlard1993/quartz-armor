@@ -3,6 +3,9 @@
     "A full set of armour crafted from smooth quartz blocks. The highest protection and toughness in the game, on durability low enough that it breaks fast."
   ],
   "versions": {
+    "2.0.2": [
+      "The mod menu icon matches the one on the download pages."
+    ],
     "2.0.1": [
       "Worn quartz armour uses the mod's own texture rather than falling back to diamond's.",
       "The mod menu icon loads."
