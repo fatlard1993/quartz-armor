@@ -3,6 +3,9 @@
     "A full set of armour crafted from smooth quartz blocks. The highest protection and toughness in the game, on durability low enough that it breaks fast."
   ],
   "versions": {
+    "2.1.0": [
+      "A trimmed piece shows its trim on the icon, not only when worn."
+    ],
     "2.0.2": [
       "The mod menu icon matches the one on the download pages."
     ],

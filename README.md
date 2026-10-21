@@ -15,7 +15,7 @@ A Fabric mod that adds a full set of armor crafted from smooth quartz blocks. It
 - Triple the enchantability of diamond, making these pieces easy to enchant well
 - Very low base durability: the tradeoff for the stat boost
 - Repairable with smooth quartz blocks
-- Accepts armor trims
+- Accepts armor trims, shown on the icon as well as when worn
 - Added to the vanilla Combat creative tab
 
 ### Armor Stats
