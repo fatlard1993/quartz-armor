@@ -29,18 +29,18 @@ public class Main implements ModInitializer {
 		Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, "quartz_armor_repair_items")
 	);
 
-	// Quartz armor material: high protection, low durability, high enchantability
+	// Quartz armor material: between iron and diamond, low durability, the highest enchantability
 	public static final ArmorMaterial QUARTZ_ARMOR_MATERIAL = new ArmorMaterial(
 		10,                                    // durability (very low)
-		Map.of(                                // defense per slot (higher than diamond)
-			ArmorType.HELMET, 4,
-			ArmorType.CHESTPLATE, 9,
-			ArmorType.LEGGINGS, 7,
-			ArmorType.BOOTS, 4
+		Map.of(                                // defense per slot
+			ArmorType.HELMET, 2,
+			ArmorType.CHESTPLATE, 7,
+			ArmorType.LEGGINGS, 5,
+			ArmorType.BOOTS, 2
 		),
 		30,                                    // enchantability (very high)
 		SoundEvents.ARMOR_EQUIP_DIAMOND,       // equip sound
-		3.0f,                                  // toughness (higher than diamond's 2)
+		1.0f,                                  // toughness
 		0.0f,                                  // knockback resistance
 		REPAIR_ITEMS,                          // repair ingredient
 		// This mod's own equipment definition, which it has always shipped at

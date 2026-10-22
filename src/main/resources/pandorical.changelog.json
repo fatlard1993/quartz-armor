@@ -1,8 +1,13 @@
 {
   "overview": [
-    "A full set of armour crafted from smooth quartz blocks. The highest protection and toughness in the game, on durability low enough that it breaks fast."
+    "A full set of armour crafted from smooth quartz blocks. Between iron and diamond, the easiest armour in the game to enchant, on durability low enough that it breaks fast."
   ],
   "versions": {
+    "2.2.0": [
+      "Quartz armour sits between iron and diamond now, not above netherite: 16 armour points (was 24) and 1 toughness (was 3).",
+      "It is still the easiest armour to enchant, still repaired with smooth quartz, and still wears out fast.",
+      "Pieces already in a world take the new numbers."
+    ],
     "2.1.0": [
       "A trimmed piece shows its trim on the icon, not only when worn."
     ],
