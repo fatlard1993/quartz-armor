@@ -1,0 +1,51 @@
+{
+  "demo": {
+    "name": "Quartz Armor",
+    "icon": "quartz-armor-justfatlard:quartz_chestplate",
+    "about": [
+      "Cheap armor of smooth quartz: better than iron, the easiest armor in the game to enchant well, and quick to wear out.",
+      "You're wearing the set. Take a piece off and enchant it with the bookshelves stood round the table (throw the bottles for levels), then fight the zombies and skeletons and patch it up at the anvil with smooth quartz."
+    ]
+  },
+  "pvp_preset": 1,
+  "needs": ["quartz-armor-justfatlard"],
+  "preset": {
+    "name": "Quartz Armor",
+    "icon": "quartz-armor-justfatlard:quartz_chestplate",
+    "pvp": false,
+    "game_mode": "survival",
+    "entry_kit": [
+      {"slot": 39, "item": {"id": "quartz-armor-justfatlard:quartz_helmet", "count": 1}},
+      {"slot": 38, "item": {"id": "quartz-armor-justfatlard:quartz_chestplate", "count": 1}},
+      {"slot": 37, "item": {"id": "quartz-armor-justfatlard:quartz_leggings", "count": 1}},
+      {"slot": 36, "item": {"id": "quartz-armor-justfatlard:quartz_boots", "count": 1}},
+      {"slot": 0, "item": {"id": "minecraft:iron_sword", "count": 1}},
+      {"slot": 1, "item": {"id": "minecraft:bow", "count": 1}},
+      {"slot": 2, "item": {"id": "minecraft:cooked_beef", "count": 16}},
+      {"slot": 3, "item": {"id": "minecraft:enchanting_table", "count": 1}},
+      {"slot": 4, "item": {"id": "minecraft:bookshelf", "count": 15}},
+      {"slot": 5, "item": {"id": "minecraft:lapis_lazuli", "count": 32}},
+      {"slot": 6, "item": {"id": "minecraft:smithing_table", "count": 1}},
+      {"slot": 9, "item": {"id": "minecraft:arrow", "count": 32}},
+      {"slot": 10, "item": {"id": "minecraft:experience_bottle", "count": 64}},
+      {"slot": 11, "item": {"id": "minecraft:experience_bottle", "count": 64}},
+      {"slot": 12, "item": {"id": "minecraft:experience_bottle", "count": 64}},
+      {"slot": 13, "item": {"id": "minecraft:sentry_armor_trim_smithing_template", "count": 1}},
+      {"slot": 14, "item": {"id": "minecraft:gold_ingot", "count": 4}},
+      {"slot": 15, "item": {"id": "minecraft:anvil", "count": 1}},
+      {"slot": 16, "item": {"id": "minecraft:smooth_quartz", "count": 8}}
+    ],
+    "respawn_kit": "entry",
+    "goal": "time",
+    "mobs": "always",
+    "mob_rarity": "normal",
+    "mob_default": "off",
+    "mob_levels": { "minecraft:zombie": "normal", "minecraft:skeleton": "normal" },
+    "life": 15,
+    "size": 3,
+    "world": "overworld",
+    "shape": "natural",
+    "biome": "minecraft:desert",
+    "weather": "clear"
+  }
+}
