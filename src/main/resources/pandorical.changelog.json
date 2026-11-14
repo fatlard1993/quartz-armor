@@ -3,6 +3,9 @@
     "A full set of armour crafted from smooth quartz blocks. Between iron and diamond, the easiest armour in the game to enchant, on durability low enough that it breaks fast."
   ],
   "versions": {
+    "2.2.2": [
+      "A demo to play in PvP Dimensions' onboarding."
+    ],
     "2.2.1": [
       "Drop changelog notes for changes nothing in the game shows."
     ],
